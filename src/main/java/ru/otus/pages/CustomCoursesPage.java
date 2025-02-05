@@ -28,7 +28,6 @@ public class CustomCoursesPage extends AbsBasePage {
 
   public CustomCoursesPage checkCustomCoursesForBusinessPageIsOpened() {
     Locator customCoursesForBusiness = page.locator(COURSES_DEVELOPMENT_FOR_BUSINESS);
-
     assertThat(customCoursesForBusiness.isVisible())
         .as("'Custom courses' page is not opened")
         .isTrue();
